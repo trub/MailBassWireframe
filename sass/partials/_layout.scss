@@ -1,0 +1,22 @@
+body {
+  @include outer-container;
+}
+nav {
+@include span-columns(12);
+}
+
+.email-list {
+@include row(table);
+@include span-columns(4);
+
+}
+
+.email-content {
+
+@include pad();
+@include span-columns(8);
+@include reset-display;
+@include pad(); 
+
+}
+
