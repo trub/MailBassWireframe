@@ -1,22 +1,55 @@
+//General Layouts
 body {
-  @include outer-container;
+@include outer-container;
+
 }
-nav {
+//Navigation main container
+.nav-container {
 @include span-columns(12);
+height: 5em;
+width: 100%;
+background-color: tomato;
+display: block;
 }
 
+
+.nav-left {
+float: left;
+}
+
+.nav-middle {
+margin-left: 25em;
+}
+
+.nav-right {
+float: right;
+}
+
+
+//List of email container
 .email-list {
-@include row(table);
-@include span-columns(4);
-
+@include span-columns(3);
 }
 
+//Border box for search bar in email container
+.search-border {
+	border:1px solid whitesmoke;
+	padding: 0.5em 0.5em;
+}
+
+// Border box for emails in email container
+.email-border {
+	border:1px solid whitesmoke;
+	padding: 0 0.5em;
+}
+
+//Reading an email container
 .email-content {
 
-@include pad();
 @include span-columns(8);
 @include reset-display;
-@include pad(); 
-
+margin-left: 4em;
+margin-top: 4em;
 }
+
 

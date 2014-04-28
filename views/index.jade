@@ -2,84 +2,87 @@ extends layout
 
 block content
   body
-    nav
-      div
+    div.nav-container
+      div.nav-left
         a(href='#')
           | All Inboxes
-          span.email-triangle  +
-        p
-          | by
-          a(href='#')
-            | Last 24 hours
-            span.email-triangle +
-        ul
-          li
-            a(href='#') Reply
-          li
-            a(href='#') Reply All
-          li
-            a(href='#') Forward
-          li
-            a(href='#') Mark As
-          li
-            a(href='#') Delete
-      button Make Audio
-      button Write New
+          span  +
+        a(href='#')
+          | Last 24 hours
+          span +
+      div.nav-middle
+        a(href='#') Reply
+        a(href='#') Reply AlL
+        a(href='#') Forward
+        a(href='#') Mark As
+        a(href='#') Delete
+      div.nav-right
+        button Make Audio
+        button Write New
     div.email-list
-      article
+      article.search-border
         div
           form(action='demo_form.asp')
-            input(type='text', value='Search')
-          div
-            h5.email-name Dale Sande
-            h4.email-subject I really like Slayer
-            p.email-info
-              | Hey, I just wanted to check in with you about Slayer.
-      article
+            input.search-bar(type='text', value='Search')
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 10:16
+          p.email-name Dale Sande
+          p.email-subject really like Slayer 
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 10:01
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 9:30
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you 
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 9:15
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you 
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 8:15
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you 
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 7:16
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
-      article
+            | Hey, I just wanted to check in with you 
+      article.email-border
         div
-          h5.email-name Dale Sande
-          h4.email-subject I really like Slayer
+          p.time-stamp 7:16
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
           p.email-info
-            | Hey, I just wanted to check in with you about Slayer.
+            | Hey, I just wanted to check in with you 
+      article.email-border
+        div
+          p.time-stamp 6:16
+          p.email-name Dale Sande
+          p.email-subject I really like Slayer
+          p.email-info
+            | Hey, I just wanted to check in with you 
     article.email-content
       div
-        h1.email-reading-title Herro I Hungy
+        h1.email-reading-title Herro Amigo
         p.email-reading-subtitle
           img(src='http://placehold.it/60x60')
           | From
