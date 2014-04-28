@@ -15,10 +15,10 @@ block content
         a(href='#') Reply AlL
         a(href='#') Forward
         a(href='#') Mark As
-        a(href='#') Delete
+        a.btn-delete(href='#') Delete
       div.nav-right
-        button Make Audio
-        button Write New
+        a.btn-new-audio(href="#") Make Audio 
+        a.btn-new-email(href="#") Write New
     div.email-list
       article.search-border
         div
@@ -83,22 +83,21 @@ block content
     article.email-content
       div
         h1.email-reading-title Herro Amigo
-        p.email-reading-subtitle
-          img(src='http://placehold.it/60x60')
-          | From
-          a Dale Sande
-          span 2 May 2014
-      .email-reading-content
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        p
-          | Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        p
-          | Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
-        p
-          | Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
-        p
-          | Regards,
-          br
-          | Dale
+        img.img-resize(src='images/128.jpg')
+        | From: 
+        a(href="#") Dale Sande
+        span.span-right 2 May 2014
+        .email-reading-content
+          p
+            | Dear Friend,
+          p
+            | Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p
+            | Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
+          p
+            | Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
+          p
+            | Regards,
+            br
+            | Dale
 

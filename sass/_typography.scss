@@ -11,14 +11,17 @@ h4 {
 	font-size: 1.25em;
 }
 p {
-	font-size: .8em;
+	font-size: .75em;
 	line-height: .6em;
 	color: #bdbdbd;
 }
 
+.email-reading-content {
+	margin-top: 4em;
+}
 .email-reading-content p{
 	font-size: 1.1em;
-	line-height: 1.1em;
+	line-height: 1.4em;
 	color: #232323;
 	font-family: serif;
 }
@@ -34,4 +37,9 @@ p {
 .time-stamp {
 	float:right;
 	font-size: .7em;
+}
+
+.span-right {
+	float: right;
+	vertical-align: text-bottom;
 }
