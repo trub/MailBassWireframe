@@ -1,104 +1,101 @@
 extends layout
 
 block content
-  body
-    div.nav-container
-      div.nav-left
-        a(href='#')
-          | All Inboxes
-          span  +
-        a(href='#')
-          | Last 24 hours
-          span +
-      div.nav-middle
-        a(href='#') Reply
-        a(href='#') Reply AlL
-        a(href='#') Forward
-        a(href='#') Mark As
-        a.btn-delete(href='#') Delete
-      div.nav-right
-        a.btn-new-audio(href="#") Make Audio 
-        a.btn-new-email(href="#") Write New
-    div.email-list
-      article.search-border
-        div
-          form(action='demo_form.asp')
-            input.search-bar(type='text', value='Search')
-      article.email-border
-        div
-          p.time-stamp 10:16
-          p.email-name Dale Sande
-          p.email-subject really like Slayer 
-          p.email-info
-            | Hey, I just wanted to check in with you
-      article.email-border
-        div
-          p.time-stamp 10:01
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you
-      article.email-border
-        div
-          p.time-stamp 9:30
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-      article.email-border
-        div
-          p.time-stamp 9:15
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-      article.email-border
-        div
-          p.time-stamp 8:15
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-      article.email-border
-        div
-          p.time-stamp 7:16
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-      article.email-border
-        div
-          p.time-stamp 7:16
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-      article.email-border
-        div
-          p.time-stamp 6:16
-          p.email-name Dale Sande
-          p.email-subject I really like Slayer
-          p.email-info
-            | Hey, I just wanted to check in with you 
-    article.email-content
-      div.email-reading-title
-        h1 Herro Amigo
-      div
-        img.img-resize(src='images/128.jpg')
-        | From: 
-        a(href="#") Dale Sande
-        span.span-right 2 May 2014
-      div.email-reading-content
-          p
-            | Dear Friend,
-          p
-            | Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          p
-            | Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
-          p
-            | Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
-          p
-            | Regards,
-            br
-            | Dale
+  body()
+    div(ng-view)
+      nav.nav-container
+        div.nav-left
+          a(href='#')
+            | All Inboxes
+          a(href='#' class= "last-btn-right")
+            | Last 24 hours
+        div.nav-middle
+          a(href='#') Reply 
+          a(href='#') Reply all
+          a(href='#') Forward
+          a(href='#') Mark As
+          a.btn-delete(href='#') Delete
+        div.nav-right
+          a.btn-new-audio(href="#") Make Audio 
+          a(href="#") Write New
+      div.email-list
+        article.search-border
+          div.search-position
+            form(action='demo_form.asp')
+              input.search-bar(type='text', value='Search')
+        article.email-border
+          div
+            p.time-stamp 10:16
+            p.email-name Dale Sande
+            p.email-subject really like Slayer 
+            p.email-info
+              | Hey, I just wanted to check in with you
+        article.email-border
+          div
+            p.time-stamp 10:01
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you
+        article.email-border
+          div
+            p.time-stamp 9:30
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+        article.email-border
+          div
+            p.time-stamp 9:15
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+        article.email-border
+          div
+            p.time-stamp 8:15
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+        article.email-border
+          div
+            p.time-stamp 7:16
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+        article.email-border
+          div
+            p.time-stamp 7:16
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+        article.email-border
+          div
+            p.time-stamp 6:16
+            p.email-name Dale Sande
+            p.email-subject I really like Slayer
+            p.email-info
+              | Hey, I just wanted to check in with you 
+      article.email-content
+        div.email-reading-title
+          h1 Herro Amigo
+        img(src='images/128.jpg')
+        div.align-details
+          | From: 
+          a(href="#") Dale Sande
+          span.span-right 2 May 2014
+        div.email-reading-content
+            p
+              | Dear Friend,
+            p
+              | Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
+            p
+              | Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
+            p
+              | Regards,
+              br
+              | Dale
 

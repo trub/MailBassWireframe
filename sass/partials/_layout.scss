@@ -1,55 +1,116 @@
 //General Layouts
 body {
 @include outer-container;
-
 }
 //Navigation main container
 .nav-container {
-@include span-columns(12);
-height: 4em;
-width: 100%;
-background-color: whitesmoke;
-display: block;
-border-bottom: 1px solid #cdcdcd;
+	@include span-columns(12);
+	height: 5em;
+	width: 100%;
+	// background-color: #fdfdfd;
+	// border-bottom: 1px solid #cdcdcd;
 }
 
-
+//Individual navigation containers
 .nav-left {
-float: left;
+	@include span-columns(4);
+
 }
 
 .nav-middle {
-margin-left: 27em;
+	@include span-columns(5);
 }
 
 .nav-right {
-float: right;
+	@include span-columns(3);
+
+}
+//Individual navigation adjustments
+.nav-left, .nav-middle, .nav-right {
+	margin-top: 2.5em;
+	display:block;
 }
 
+.nav-left {
+	padding: 0 1em;
+	& .last-btn-right {
+		padding: 5.2em;
+	}
+}
+
+.nav-middle {
+	text-align: center;
+	& a{
+		padding: 5px;
+	}
+}
+
+.nav-right {
+	text-align: right;
+	padding-right: 1.6em;
+	& a {
+		padding: 5px;
+	}
+}
 
 //List of email container
 .email-list {
-@include span-columns(3.5);
+	@include span-columns(3.5);
+	height: 42em;
+	overflow: auto;
+	overflow-x: hidden;
+
+}
+
+//Style scroll bar
+//hack @ http://css-tricks.com/custom-scrollbars-in-webkit/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3); 
+
 }
 
 //Border box for search bar in email container
 .search-border {
-	border:1px solid whitesmoke;
 	padding: 1em 0.6em;
+	border-bottom: 1px solid  whitesmoke;
+
 }
+
 
 // Border box for emails in email container
 .email-border {
-	border: 1px solid  whitesmoke;
+	border-bottom: 1px solid  whitesmoke;
 	padding: 0.6em 0.8em;
 }
 
 //Container for reading emails
 .email-content {
-@include shift(1.2);
-@include span-columns(7);
-@include reset-display;
-margin-top: 4em;
+	@include shift(1.2);
+	@include span-columns(7);
+	@include reset-display;
+	margin-top: 4em;
 }
+
+
+//Align reading email details
+.align-details{
+	display: inline;
+
+}
+
+.span-right {
+	margin-left: 20em;
+}
+
+
 
 
