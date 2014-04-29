@@ -1,7 +1,15 @@
-extends layout
+doctype html
+html(ng-app='mail-bass')
+  head
+    title MailBass Web App Concept
+    link(rel='stylesheet', href='/stylesheets/main.css')
 
-block content
-  body()
+  body
+    block content
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js')
+    link(rel='"text/javascript"', href='../js/main.js')
+    script(src="//localhost:35729/livereload.js")
     div(ng-view)
       nav.nav-container
         div.nav-left
@@ -17,17 +25,7 @@ block content
           a.btn-delete(href='#') Delete
         div.nav-right
           a.btn-new-audio(href="#") Make Audio 
-          a(href="#openModal") Write New
-          div( id="openModal" class="modalDialog")
-           div
-            a.close(href='#close', title='Close') X
-            h2 Modal Box
-            a(href="#") attach file
-            a(href="#") send
-            form
-              input(type='text', value="to:") 
-              input(type='text', value="cc:") 
-              input(type='text', value="bcc:") 
+          a(href="#") Write New
       div.email-list
         article.search-border
           div.search-position
