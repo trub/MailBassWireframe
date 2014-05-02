@@ -1,5 +1,3 @@
-# Generated CSS output
-public/stylesheets/*.css
 
 # No node packages
 node_modules/
